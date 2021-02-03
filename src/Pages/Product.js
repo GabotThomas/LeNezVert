@@ -1,21 +1,24 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect,useRef} from 'react';
 import * as firebase from "../Server/firebase";
-//import {useParams} from "react-router-dom";
+import {useParams} from "react-router-dom";
 
 
 function Product() {
     
-    //let param = useParams()
+    const {id} = useParams();
+    console.log(id)
+    
+    const paramRef = useRef(id);
+    console.log(paramRef)
     const [data, setData] = useState();
     useEffect(() => {
         // eslint-disable-next-line
-        firebase.ParfumLoad('Parfum/Parfum1')
+        firebase.ParfumLoad('Parfum/Parfum' + paramRef.current)
         .then(function(snapshot) {
             setData(snapshot.val())
         })
 
     }, [setData]);
-    console.log(data)
   return (
     data ? (
     <>

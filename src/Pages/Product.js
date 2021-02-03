@@ -4,10 +4,12 @@ import {useParams} from "react-router-dom";
 
 
 function Product() {
-    let { id } = useParams();
+    
+    let param = useParams()
     const [data, setData] = useState();
     useEffect(() => {
-        firebase.ParfumLoad('/Parfum/Parfum'+id)
+        // eslint-disable-next-line
+        firebase.ParfumLoad('Parfum/Parfum' + param.id)
         .then(function(snapshot) {
             setData(snapshot.val())
         })

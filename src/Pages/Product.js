@@ -1,15 +1,15 @@
 import React, { useState, useEffect} from 'react';
 import * as firebase from "../Server/firebase";
-import {useParams} from "react-router-dom";
+//import {useParams} from "react-router-dom";
 
 
 function Product() {
     
-    let param = useParams()
+    //let param = useParams()
     const [data, setData] = useState();
     useEffect(() => {
         // eslint-disable-next-line
-        firebase.ParfumLoad('Parfum/Parfum' + param.id)
+        firebase.ParfumLoad('Parfum/Parfum1')
         .then(function(snapshot) {
             setData(snapshot.val())
         })

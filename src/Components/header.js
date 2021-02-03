@@ -1,13 +1,21 @@
+import React from 'react';
+import {Link} from "react-router-dom";
 
 
 function Header() {
     return (
         <header >
             <div class="menu d-flex container align-c">
-                <a href="index.php" class="bodoni b-700 logo">LE NEZ VERT</a>
+                <Link 
+                    className="bodoni b-700 logo"
+                    to="/"
+                >
+                    LE NEZ VERT
+                </Link>
                 <div class="menuP d-flex">
-                    <a href="index.php">Accueil</a>
-                    <a href="marque.php">Les marques</a>
+                    <Link to="/">Accueil</Link>
+                    <Link to="/Marque">Marque</Link>
+                    
                     <a href="nos_engagements.php">Nos engagements</a>
                     <a href="test.php">A propos</a>
                 </div>

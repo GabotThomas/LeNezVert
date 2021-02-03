@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import Marque from './Pages/Marque';
 import Header from './Components/header'; 
 import Footer from './Components/footer'; 
+import Product from "./Pages/Product"
 
 
 export default function App() {
@@ -17,6 +18,9 @@ export default function App() {
         </Route>
         <Route path="/Marque">
           <Marque/>
+        </Route>
+        <Route path={"/Parfum/:id"}>
+            <Product/>
         </Route>
       </main>
     <Footer/>

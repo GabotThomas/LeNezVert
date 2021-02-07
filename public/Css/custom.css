@@ -2,6 +2,7 @@
 *{
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    font-weight:400;
 }
 html{
     scroll-behavior: smooth;
@@ -139,9 +140,6 @@ input{
     display: flex;
     flex-direction: column;
 }
-.nw{
-    flex-wrap: nowrap;
-}
 .container{
     width: calc(100% - (100% / 14) * 2);
     margin: 0 auto;
@@ -149,32 +147,16 @@ input{
 .align-c{
     align-items: center;
 }
-.align-e{
-    align-items: flex-end;
-}
 .jst-c{
     justify-content: center;
 }
 .jst-start{
     justify-content: flex-start;
 }
-
-/*background*/
 .bg-c{
     background-position: center!important;
     background-size: cover!important;
 }
-.bg-v{
-    background-color: var(--vert);
-}
-.bg-o{
-    background-color: #FBBB7D;
-}
-.bg-g{
-    background-color: var(--gris);
-}
-
-/*color*/
 .c-white{
     color: #fff;
 }
@@ -202,12 +184,11 @@ input{
 .mb-8{
     margin-bottom: 8rem!important;
 }
-
+.mt-8{
+    margin-top: 8rem!important;
+}
 .my-8{
     margin: 8rem 0!important;
-}
-.mt-2{
-    margin-top: 2rem!important;
 }
 .mt-4{
     margin-top: 4rem!important;
@@ -226,17 +207,10 @@ input{
 .p-2{
     padding: 2rem!important;
 }
-.p-1{
-    padding: 1rem!important;
-}
 
 .btn-v{
     color: white;
     background-color:var(--vert);
-}
-.btn-r{
-    background-color: red;
-    color: white;
 }
 
 img{
@@ -277,10 +251,6 @@ img{
 }
 .col-8{
     width:calc(8  * (100% / 12) - 10px);
-}
-
-.col-9{
-    width:calc(9 * (100% / 12) - 10px);
 }
 .col-10{
     width:calc(10 * (100% / 12) - 10px);
@@ -435,55 +405,6 @@ header{
 
 
 
-/*COntent*/
-.content h1{
-    font-family: 'Bodoni Moda', serif;
-    font-weight: 800;
-    font-size: 38px;
-    text-align: center;
-    color: var(--vert);
-    margin-bottom: 1rem;
-}
-.content p{
-    font-size: 12px;
-}
-
-
-/*Nos engagements*/
-.engagements .blur{
-    padding: 40px 20px;
-    background: rgba(131, 131, 131, 0.4);
-    backdrop-filter: blur(7px);
-    height: fit-content;
-}
-
-.eng-pre{
-     display: flex;
-     align-items: flex-end;
-}
-.eng-pre .ythgd{
-    font-size: 144px;
-    font-weight: 700;
-}
-.eng-pre .iopml{
-    margin-top: 40px;
-}
-.eng-pre .bar{
-    width: 6px;
-    background-color: var(--vert);
-    margin: 10px 10px 0 20px;
-    flex-shrink: 0;
-}
-.documentation .eng-pre:nth-child(2n+1){
-    justify-content: flex-end;
-}
-.documentation .eng-pre:nth-child(2n+1) .ythgd{
-    color: #8A8A8A;;
-}
-.documentation .eng-pre:nth-child(2n+1) .bar{
-    background-color: #8A8A8A;;
-}
-
 /*Backend*/
 
 .backend{
@@ -498,8 +419,4 @@ header{
 .backend .uploadPictureContainer{
     width:calc(33% - 20px) ;
     margin: 10px;
-}
-.backend img{
-    height: 200px;
-    width: auto;
 }

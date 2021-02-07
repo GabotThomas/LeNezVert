@@ -7,7 +7,7 @@ function Header() {
         <header >
             <div class="menu d-flex container align-c">
                 <Link 
-                    className="bodoni b-700 logo"
+                    className="bodoni b-700 logo c-vert"
                     to="/"
                 >
                     LE NEZ VERT
@@ -15,8 +15,8 @@ function Header() {
                 <div class="menuP d-flex">
                     <Link to="/">Accueil</Link>
                     <Link to="/Marque">Marque</Link>
+                    <Link to="/nos_engagements">Nos engagements</Link>
                     
-                    <a href="nos_engagements.php">Nos engagements</a>
                     <a href="test.php">A propos</a>
                 </div>
             </div>

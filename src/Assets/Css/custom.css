@@ -401,6 +401,8 @@ header{
     background: var(--gris);
     padding: 20px;
     width:calc(3 * (100% / 12) - 1.5rem);
+    margin-left: 0.75rem;
+    margin-right: 00.75rem;
 }
 .article h2{
     font-size: 32px;

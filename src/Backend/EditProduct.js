@@ -1,4 +1,4 @@
-import React, { useState, useEffect,useCallback,useRef} from 'react';
+import React, { useState, useEffect,useRef} from 'react';
 import {useParams} from "react-router-dom";
 import * as firebase from "../Server/firebase";
 import ImageUploader from 'react-images-upload';
@@ -142,11 +142,11 @@ function Text(props){
         setValue(props.default);
     },[props.default]);
 
-    const handleChange = useCallback((event) => {
+    const handleChange = (event) => {
         setValue(event.target.value)
         props.value(event.target.value);
     }
-    , []);
+    ;
 
     return(
         <input  type={props.type} onChange={handleChange} placeholder={props.pc} value={value} class="form form-black col-12 mb"></input>
@@ -160,11 +160,11 @@ function Textarea(props){
         setValue(props.default);
     },[props.default]);
 
-    const handleChange = useCallback((event) => {
+    const handleChange = (event) => {
         setValue(event.target.value)
         props.value(event.target.value);
     }
-    , []);
+    ;
 
     return(
         <textarea rows={5} type={props.type} onChange={handleChange} placeholder={props.pc} value={value} class="form form-black col-12 mb"/>
@@ -198,7 +198,7 @@ function ImageLoad(props){
     }
 
 
-    const img = <img src={value}></img>
+    const img = <img src={value} alt=""></img>
 
 
     return(

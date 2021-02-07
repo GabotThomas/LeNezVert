@@ -13,7 +13,6 @@ var firebaseConfig = {
     storageBucket: "lenezvert.appspot.com",
     messagingSenderId: "556581681022",
     appId: "1:556581681022:web:460e10e94eac662569252f",
-    storageBucket: "gs://lenezvert.appspot.com"
   };
     /*
     if (!firebase.apps.length) {

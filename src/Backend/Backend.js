@@ -1,6 +1,4 @@
-import React, { useState, useEffect} from 'react';
-import * as firebase from "../Server/firebase";
-import {Link} from "react-router-dom";
+import React from 'react';
 import {Route} from "react-router-dom";
 import ListProduct from "./ListProduct";
 import EditProduct from "./EditProduct"

@@ -35,7 +35,7 @@ function Marque() {
     <>
     <div class="collection container d-flex-c mb-8">
             <h1 class="title c-vert mb">Les Marques</h1>
-            <div class="d-flex">
+            <div class="d-flex jst-start">
                 {test}
             </div>
         </div>

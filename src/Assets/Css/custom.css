@@ -23,6 +23,9 @@ h1,h2,h3{
     margin: inherit;
     
 }
+ul{
+    margin: 0;
+}
 input{
     outline:none;
 }
@@ -61,6 +64,12 @@ input{
 }
 .ta{
     text-align: center;
+}
+.te{
+    text-align: end;
+}
+.ts{
+    text-align: start;
 }
 .title{
     font-weight: 800;
@@ -157,6 +166,9 @@ input{
 }
 .jst-start{
     justify-content: flex-start;
+}
+.jst-end{
+    justify-content: flex-end;
 }
 
 /*background*/
@@ -484,6 +496,18 @@ header{
 }
 .documentation .eng-pre:nth-child(2n+1) .bar{
     background-color: #8A8A8A;;
+}
+.eng .col-12{
+    justify-content: flex-end;
+}
+.eng .col-12:nth-child(2n+1){
+    justify-content: flex-start;
+}
+.eng .col-12 h1{
+    text-align: end;
+}
+.eng .col-12:nth-child(2n+1) h1{
+    text-align: start;
 }
 
 /*Backend*/

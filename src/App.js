@@ -9,6 +9,7 @@ import Product from "./Pages/Product";
 import { useLocation } from 'react-router-dom';
 import Backend from "./Backend/Backend"
 import Engagements from "./Pages/Engagements";
+import Documentation from "./Pages/Documentation";
 
 
 
@@ -47,6 +48,9 @@ export default function App() {
             </Route>
             <Route path={"/nos_engagements"}>
                 <Engagements/>
+            </Route>
+            <Route path={"/Documentation/:id"}>
+                <Documentation/>
             </Route>
           </main>
         <Footer/>

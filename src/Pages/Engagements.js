@@ -1,12 +1,45 @@
-//import React, { useState, useEffect} from 'react';
-import React from 'react';
-//import * as firebase from "../Server/firebase";
-//import {Link} from "react-router-dom";
+import React, { useState, useEffect} from 'react';
+import * as firebase from "../Server/firebase";
+import {Link} from "react-router-dom";
 
 
 function Engagements() {
 
+    const [data, setData] = useState([]);
+    useEffect(() => {
+        firebase.DocLoad('Documentation')
+        .then(function(snapshot) {
+            setData([]);
+            snapshot.forEach((childSnapshot) => {
+                setData(
+                    arr => [...arr, childSnapshot.val()]
+                )
+            });
+        })
 
+    }, [setData]);
+
+    
+
+    const test = data.map((item, index)=>{
+        return(
+            <div class="col-12  eng-pre mb-4">
+                <div class="col-7 d-flex nw"> 
+                    <div class="ythgd c-vert bodoni">0{index+1}</div>
+                    <div class="d-flex iopml nw">
+                        <div class="bar"></div>
+                        <div class="d-flex-c ">
+                            <h3>{item.titre}</h3>
+                            <p class="text">{item.ldesc}</p>
+                            <Link to={"/Documentation/"+item.id}>
+                                <strong class="bodoni ft-20">En savoir plus</strong>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
+        }) ;
         
   return (
     <>
@@ -50,60 +83,9 @@ function Engagements() {
             </div>
         </div>
         <div class="container d-flex documentation mb-8">
-                <h1 class="title c-vert col-12 ta mb-2">Documentation</h1>
-                <div class="col-12  eng-pre mb-4">
-                    <div class="col-7 d-flex nw"> 
-                        <div class="ythgd c-vert bodoni">01</div>
-                        <div class="d-flex iopml nw">
-                            <div class="bar"></div>
-                            <div class="d-flex-c ">
-                                <h3>Qu’est ce que l’IFRA ?</h3>
-                                <p class="text">L’IFRA : International Fragrance Association (Association Internationale de Parfum) est un organisme qui représente l’industrie du parfum à l’international.</p>
-                                <strong class="bodoni ft-20">En savoir plus</strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12  eng-pre mb-4">
-                    <div class="col-7 d-flex nw"> 
-                        <div class="ythgd c-vert bodoni">02</div>
-                        <div class="d-flex iopml nw">
-                            <div class="bar"></div>
-                            <div class="d-flex-c ">
-                                <h3>Qu’est ce que l’IFRA ?</h3>
-                                <p class="text">L’IFRA : International Fragrance Association (Association Internationale de Parfum) est un organisme qui représente l’industrie du parfum à l’international.</p>
-                                <strong class="bodoni ft-20">En savoir plus</strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12  eng-pre mb-4">
-                    <div class="col-7 d-flex nw"> 
-                        <div class="ythgd c-vert bodoni">03</div>
-                        <div class="d-flex iopml nw">
-                            <div class="bar"></div>
-                            <div class="d-flex-c ">
-                                <h3>Qu’est ce que l’IFRA ?</h3>
-                                <p class="text">L’IFRA : International Fragrance Association (Association Internationale de Parfum) est un organisme qui représente l’industrie du parfum à l’international.</p>
-                                <strong class="bodoni ft-20">En savoir plus</strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12  eng-pre">
-                    <div class="col-7 d-flex nw"> 
-                        <div class="ythgd c-vert bodoni">04</div>
-                        <div class="d-flex iopml nw">
-                            <div class="bar"></div>
-                            <div class="d-flex-c ">
-                                <h3>Qu’est ce que l’IFRA ?</h3>
-                                <p class="text">L’IFRA : International Fragrance Association (Association Internationale de Parfum) est un organisme qui représente l’industrie du parfum à l’international.</p>
-                                <strong class="bodoni ft-20">En savoir plus</strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h1 class="title c-vert col-12 ta mb-2">Documentation</h1>
+            {test}
+        </div>
     </div>
     </>
   );

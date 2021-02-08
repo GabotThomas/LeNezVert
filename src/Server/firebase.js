@@ -65,7 +65,23 @@ var firebaseConfig = {
         .delete()
 
     }
+    export const DocLoad = (collection) => {
 
+        return db
+        .ref(collection)
+        .once('value')
+    }
+    export const DocSet = (box) => {
+
+        return db
+        .ref('Documentation/Documentation'+box.id)
+        .set({
+            id:box.id,
+            titre:box.titre,
+            ldesc:box.ldesc,
+            content:box.content,
+        });
+    }
 
 
 

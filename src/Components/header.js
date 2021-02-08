@@ -16,8 +16,7 @@ function Header() {
                     <Link to="/">Accueil</Link>
                     <Link to="/Marque">Marque</Link>
                     <Link to="/nos_engagements">Nos engagements</Link>
-                    
-                    <a href="test.php">A propos</a>
+                    <Link to="/A_Propos">A propos</Link>
                 </div>
             </div>
         </header>

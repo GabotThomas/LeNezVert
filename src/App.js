@@ -10,6 +10,8 @@ import { useLocation } from 'react-router-dom';
 import Backend from "./Backend/Backend"
 import Engagements from "./Pages/Engagements";
 import Documentation from "./Pages/Documentation";
+import Propos from "./Pages/Propos";
+import Faq from "./Pages/Faq";
 
 
 
@@ -40,7 +42,7 @@ export default function App() {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route exact path="/Marque">
+            <Route path="/Marque">
               <Marque/>
             </Route>
             <Route path={"/Parfum/:id"}>
@@ -51,6 +53,12 @@ export default function App() {
             </Route>
             <Route path={"/Documentation/:id"}>
                 <Documentation/>
+            </Route>
+            <Route path={"/A_Propos"}>
+                <Propos/>
+            </Route>
+            <Route path={"/FAQ"}>
+                <Faq />
             </Route>
           </main>
         <Footer/>

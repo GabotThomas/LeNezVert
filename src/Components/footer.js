@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 function Footer() {
     return (
@@ -11,7 +12,7 @@ function Footer() {
                         <span class="text b-800 bodoni c-white ft-20 mb">En savoir plus</span>
                         <span class="text c-white">Nos marques</span>
                         <span class="text c-white">Documentation</span>
-                        <span class="text c-white mb-2">FAQ</span>
+                        <Link to={"/FAQ"} className={"text c-white mb-2"}>FAQ</Link>
                         <span class="text b-800 bodoni c-white ft-20 mb">Mes réseaux sociaux</span>
                         <div class="d-flex jst-start align-c">
                             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">

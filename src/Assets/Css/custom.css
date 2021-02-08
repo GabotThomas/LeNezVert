@@ -185,6 +185,9 @@ input{
 .bg-g{
     background-color: var(--gris);
 }
+.bg-w{
+    background-color: white;
+}
 
 /*color*/
 .c-white{
@@ -217,6 +220,12 @@ input{
 
 .my-8{
     margin: 8rem 0!important;
+}
+.my{
+    margin: 1rem 0!important;
+}
+.my-2{
+    margin: 2rem 0!important;
 }
 .mt-2{
     margin-top: 2rem!important;
@@ -301,7 +310,9 @@ img{
 .col-12{
     width: 100%;
 }
-
+.ptn{
+    cursor: pointer;
+}
 
 /*Theme*/
 
@@ -509,6 +520,27 @@ header{
 .eng .col-12:nth-child(2n+1) h1{
     text-align: start;
 }
+
+
+
+
+
+/*FAQ*/
+.ques .titre{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    z-index: 1;
+}
+.ques .description{
+    margin-top: -20px;
+}
+.gn.description{
+    background-color:#8A8A8A;
+    color: white!important;
+}
+
 
 /*Backend*/
 

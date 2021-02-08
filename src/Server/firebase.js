@@ -82,6 +82,23 @@ var firebaseConfig = {
             content:box.content,
         });
     }
+    export const FaqLoad = (collection) => {
+
+        return db
+        .ref(collection)
+        .once('value')
+    }
+    export const FaqSet = (box) => {
+
+        return db
+        .ref('Faq/Faq'+box.id)
+        .set({
+            id:box.id,
+            titre:box.titre,
+            content:box.content,
+            color:box.color
+        });
+    }
 
 
 

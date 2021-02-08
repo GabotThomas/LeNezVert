@@ -5,6 +5,8 @@ import EditProduct from "./EditProduct";
 import {Link} from "react-router-dom";
 import ListDoc from "./ListDoc";
 import EditDoc from "./EditDoc";
+import ListFaq from './ListFaq';
+import EditFaq from './EditFaq';
 
 
 
@@ -23,7 +25,10 @@ function Backend() {
                 </Link>  
                 <Link to={"/0vdviz48748dz854a154c8774fz1c5c45z/documentation/"} className={"col-12 d-flex relative jst-c  mb"}>
                   <h2 class="title ta">Documentation</h2>
-                </Link> 
+                </Link>
+                <Link to={"/0vdviz48748dz854a154c8774fz1c5c45z/faq/"} className={"col-12 d-flex relative jst-c  mb"}>
+                  <h2 class="title ta">FAQ</h2>
+                </Link>  
               </div>
             </div>
           </div>
@@ -39,6 +44,12 @@ function Backend() {
         </Route>
         <Route exact path={"/0vdviz48748dz854a154c8774fz1c5c45z/documentation/:id"}>
             <EditDoc/>
+        </Route>
+        <Route exact path={"/0vdviz48748dz854a154c8774fz1c5c45z/faq/"}>
+            <ListFaq/>
+        </Route>
+        <Route exact path={"/0vdviz48748dz854a154c8774fz1c5c45z/faq/:id"}>
+            <EditFaq/>
         </Route>
     </>
   );

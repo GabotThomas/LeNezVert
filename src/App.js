@@ -40,7 +40,7 @@ export default function App() {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/Marque">
+            <Route exact path="/Marque">
               <Marque/>
             </Route>
             <Route path={"/Parfum/:id"}>

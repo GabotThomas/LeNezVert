@@ -53,10 +53,10 @@ function Ques(props){
 
     return(
         <>
-            <div onClick={open} class="col-12 d-flex-c my-2 ptn ques">
-                <div class="col-8 bdr-20 bg-g p-2 titre">{props.titre}</div>
+            <div onClick={open} className={"col-12 d-flex-c my ptn ques "+props.color}>
+                <div class="col-8 bdr-20 bg-g p-2 titre col-10-md col-12-sm">{props.titre}</div>
                 {active ? 
-                    <div className={"col-8 bdr-20 bg-g p-2 description text "+props.color} dangerouslySetInnerHTML={{__html: props.content}}>
+                    <div className={"col-8 bdr-20 bg-g p-2 description text col-10-md col-12-sm"} dangerouslySetInnerHTML={{__html: props.content}}>
                     </div>:
                     <></>
                 }

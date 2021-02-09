@@ -33,6 +33,7 @@ function Marque() {
         
   return (
     <>
+    <div class="logo-marque"><img src="/Img/logo.png" alt=""></img></div>
     <div class="collection container d-flex-c mb-8">
             <h1 class="title c-vert mb">Les Marques</h1>
             <div class="d-flex jst-start">

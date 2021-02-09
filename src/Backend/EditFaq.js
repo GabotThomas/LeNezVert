@@ -117,7 +117,9 @@ function Text(props){
 function Select(props){
     const [value, setValue] = useState('gn');
     useEffect(() => {
-        setValue(props.default);
+        if(props.default !== ""){
+            setValue(props.default);
+        }
     },[props.default]);
 
     const change = (event) =>{
@@ -133,9 +135,9 @@ function Select(props){
             <option value="vg">Vert Gris</option>
         </select>
         <div class="p-2 bg-w">
-            <div class="col-12 d-flex-c my-2 ptn ques">
+            <div className={"col-12 d-flex-c my-2 ptn ques " +value}>
                 <div class="col-12 bdr-20 bg-g p-2 titre">Votre Question</div>
-                <div className={"col-12 bdr-20 bg-g p-2 text description "+value}>
+                <div className={"col-12 bdr-20 bg-g p-2 text description "}>
                     Testcisjfisjfijifjsiiiiijdjdjdjdjdjd
                 </div>
             </div>

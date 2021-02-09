@@ -25,7 +25,7 @@ function Documentation() {
             item.push(           
                 
                     <div class="col-12 d-flex mb-2">
-                        <div class="d-flex-c col-6 content" dangerouslySetInnerHTML={{__html: data.content[i]}} />
+                        <div class="d-flex-c col-6 col-10-md col-12-sm content" dangerouslySetInnerHTML={{__html: data.content[i]}} />
                     </div>
             )
         }

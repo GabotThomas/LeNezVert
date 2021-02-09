@@ -24,7 +24,7 @@ function Engagements() {
     const test = data.map((item, index)=>{
         return(
             <div class="col-12  eng-pre mb-4">
-                <div class="col-7 d-flex nw"> 
+                <div class="col-7 d-flex nw col-10-md col-12-sm"> 
                     <div class="ythgd c-vert bodoni">0{index+1}</div>
                     <div class="d-flex iopml nw">
                         <div class="bar"></div>
@@ -45,13 +45,13 @@ function Engagements() {
     <>
     <div class="engagements">
         <div class="container d-flex-c align-c">
-            <div class="col-10 d-flex mb-8">
-                <div class="col-5 d-flex jst-c bdr-20 bg-c align-e p-1" style={{background: "url('Img/Gallerie/engagement.png')"}}>
+            <div class="col-10 d-flex mb-8 col-12-md">
+                <div class="col-5 d-flex jst-c bdr-20 bg-c align-e p-1 col-12-sm mb" style={{background: "url('Img/Gallerie/engagement.png')"}}>
                     <div class="blur bdr-20 d-flex col-12 jst-c" style={{}}>
-                        <h1 class="title t2 c-white">Nos Engagements</h1>
+                        <h1 class="title t2 c-white ta">Nos Engagements</h1>
                     </div>
                 </div>
-                <div class="col-7 d-flex-c">
+                <div class="col-7 d-flex-c mb col-12-sm">
                     <div class="col-12 bdr-15 d-flex bg-v p-1 mb">
                         <div class="col-3 title c-white jst-c d-flex align-c">1</div>
                         <div class="col-9">

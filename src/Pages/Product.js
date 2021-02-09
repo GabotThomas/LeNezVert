@@ -20,19 +20,19 @@ function Product() {
     data ? (
     <>
         <div class="container d-flex mb-4">
-           <div class="col-6"><img class="bdr-20 "src={data.urlImg} alt=""/></div>
-           <div class="col-6 d-flex-c jst-c">
+           <div class="col-6 col-12-sm mb"><img class="bdr-20 "src={data.urlImg} alt=""/></div>
+           <div class="col-6 d-flex-c jst-c col-12-sm">
                <h1 class="title">{data.name}</h1>
-               <p class="text mb col-8">{data.ldesc}</p>
+               <p class="text mb col-8 col-12-md">{data.ldesc}</p>
                <div class="button btn-v">Le site de la marque</div>
            </div>
        </div>
        <div class="container d-flex mb-8">
-            <div class="d-flex-c col-6 content">
+            <div class="d-flex-c col-6 content col-12-sm mb">
                 <div dangerouslySetInnerHTML={{__html: data.content}} />
             </div>
-            <div class="col-6 recommandation" >
-                <div class="col-6 ma relative ">
+            <div class="col-6 recommandation col-12-sm" >
+                <div class="col-6 ma relative col-10-md col-12-st">
                     <img class="bdr-20"src={data.recommandation1} alt=""/>
                     <div class="reco relative">
                         <div class="title t2 c-vert ta jst-c ">recommandation</div>

@@ -10,6 +10,7 @@ body{
     margin:0;
     padding: 0;
     width: 100%;
+    overflow-x: hidden;
 }   
 a{
     text-decoration: none;
@@ -320,10 +321,61 @@ img{
 header{
     z-index: 30;
 }
+.logo-home{
+    position: absolute;
+    top: 200px;
+    right: 0px;
+    z-index: -1;
+    overflow: hidden;
+    width: calc(6 * (100% / 14));
+}
+.logo-home img{
+    
+    height: auto;
+    transform: translateX(100px);
+}
 .menu{
     height: 135px;
     justify-content: space-between;
 
+}
+.menu-mobile{
+    width: 40px;
+    height: auto;
+    display: none;
+}
+.menu-mobile path{
+    fill: var(--vert);
+}
+.menu-m{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    padding:40px;
+    background-color: var(--gris);
+    z-index: 30;
+}
+.menu-m{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.menu-m a{
+    color: var(--vert);
+    display: block;
+    padding: 20px 40px;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    padding:40px;
+    background-color: rgba(0, 0, 0, 0.6) ;
+    z-index: 29;
 }
 .logo{
     font-size: 40px;
@@ -372,7 +424,7 @@ header{
 
 .ne .block{
     background-color: #F7F7F7;
-    padding: 4rem 1rem;
+    padding: 4rem 2rem;
 }
 .ne p {
     max-width: 800px;
@@ -380,6 +432,19 @@ header{
 
 /*Nos marques */
 
+.logo-marque{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: calc(8 * (100% / 14));
+    overflow: hidden;
+}
+.logo-marque img{
+    transform: translate(250px,-250px);
+    height: auto;
+    opacity: 0.8;
+}
 .marqueI{
 
 }
@@ -451,11 +516,14 @@ header{
     background-color: var(--gris);
     z-index: 1;
     margin: 0 20px;
+    min-width: 250px;
+    
 }
 .reco div{
     display: flex;
     padding: 40px 0;
     margin: -20px;
+    
 }
 
 
@@ -526,6 +594,13 @@ header{
 
 
 /*FAQ*/
+.ques:nth-child(2n){
+    align-items: center;
+}
+.ques:nth-child(3n){
+    align-items: flex-end;
+}
+
 .ques .titre{
     font-size: 24px;
     text-transform: uppercase;
@@ -536,11 +611,25 @@ header{
 .ques .description{
     margin-top: -20px;
 }
-.gn.description{
+.gn .description{
     background-color:#8A8A8A;
     color: white!important;
 }
-
+.ng .titre{
+    background-color:#8A8A8A;
+    color: white!important;
+}
+.gv .titre{
+    color: var(--vert);
+}
+.gv .description{
+    background-color:#8A8A8A;
+    color: white!important;
+}
+.vg .titre{
+    color: white!important;
+    background-color: var(--vert);
+}
 
 /*Backend*/
 
@@ -560,4 +649,112 @@ header{
 .backend img{
     height: 200px;
     width: auto;
+}
+
+
+@media (max-width: 1100px){
+    /*Template*/
+    .menu-mobile{
+        display: flex;
+    }
+    .col-12-md{
+        width: 100%;
+    }
+    .col-10-md{
+        width:calc(10 * (100% / 12) - 10px);
+    }
+
+    /*Theme*/
+    .menuP{
+        display: none;
+    }
+    /*nos marques*/
+    .article{
+        width: calc(4 * (100% / 12) - 1.5rem);
+    }
+    /*FAQ*/
+    .ques:nth-child(2n){
+        align-items: flex-end;
+    }
+    .ques:nth-child(2n+1){
+        align-items: flex-start;
+    }
+}
+
+
+
+
+/*Responsive*/
+@media (max-width: 769px){
+    /*Template*/
+    .container{
+        width: calc(100% - 40px);
+    }
+    .col-12-sm{
+        width: 100%;
+    }
+    .col-10-sm{
+        width:calc(10 * (100% / 12) - 10px);
+    }
+
+    /*Theme*/
+    .menuP{
+        display: none;
+    }
+    #index .menu-mobile path{
+        fill: white;
+    }
+    .banner{
+        width: 100%;
+    }
+    .banner-contain{
+        width: 100%;
+        padding: 135px 40px;
+    }
+    /*footer*/
+    .footer .container{
+        flex-direction: column-reverse;
+    }
+
+    /*nos marques*/
+    .article{
+        width: calc(6 * (100% / 12) - 1.5rem);
+    }
+    /*nos engagements*/
+    .eng-pre .ythgd {
+        font-size: 100px;
+    }
+    .eng-pre .iopml{
+        margin-top: 20px;
+    }
+    .eng .col-12 h1{
+        text-align: start;
+        font-size: 30px;
+    }
+    /*FAQ*/
+    .ques .titre{
+        font-size: 18px;
+        padding: 1rem;
+    }
+
+
+    
+}
+
+@media(max-width: 500px){
+    .col-12-st{
+        width:100%;
+    }
+    
+    .article{
+        width: calc(11 * (100% / 12) - 1.5rem);
+        margin: 0 auto;
+    }
+    /*nos engagements*/
+    .eng-pre .col-7{
+        flex-wrap: wrap;
+    }
+    .eng-pre .ythgd{
+        margin: 0 auto;
+    }
 }

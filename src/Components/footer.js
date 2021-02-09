@@ -7,11 +7,11 @@ function Footer() {
     <footer>
         <div class="footer d-flex-c col-12">
             <div class="d-flex container mb-3">
-                <div class="col-6 d-flex jst-c">
+                <div class="col-6 d-flex jst-c col-12-sm">
                     <div class="d-flex-c">
                         <span class="text b-800 bodoni c-white ft-20 mb">En savoir plus</span>
-                        <span class="text c-white">Nos marques</span>
-                        <span class="text c-white">Documentation</span>
+                        <Link to="/Marque" className={"text c-white"}>Les marques</Link>
+                        <Link to="/nos_engagements" className={"text c-white"}>Documentation</Link>
                         <Link to={"/FAQ"} className={"text c-white mb-2"}>FAQ</Link>
                         <span class="text b-800 bodoni c-white ft-20 mb">Mes réseaux sociaux</span>
                         <div class="d-flex jst-start align-c">
@@ -29,9 +29,9 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-                <div class="col-6 d-flex relative">
+                <div class="col-6 d-flex relative col-12-sm mb-2">
                     <div class="abs"></div>
-                    <div class="d-flex-c col-8" style={{zIndex: 5}}>
+                    <div class="d-flex-c col-8 col-12-sm" style={{zIndex: 5}}>
                         <h1 class="title c-white mb">Inscrivez vous a notre newsletter !</h1>
                         <input type="mail" placeholder="Votre mail" class="form mb"/>
                         <div class="button">Envoyer</div>

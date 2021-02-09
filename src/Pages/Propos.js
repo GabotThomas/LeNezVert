@@ -6,8 +6,8 @@ function Propos() {
   return (
     <>
       <div class="container d-flex jst-c mb-8">
-          <div class="d-flex-c col-8">
-                <h1 class="title c-vert col-12 ta mb-2">A propos</h1>
+          <div class="d-flex-c col-8 col-12-sm">
+                <h1 class="title c-vert col-12 ta mb-2">Notre Histoire</h1>
                 <p class="text">Le nez vert, c’est la réunion de deux écoles de passionnés qui ont à cœur de vous faire découvrir leur univers et leurs engagements. Cinq étudiants de l’École Supérieure du Parfum s'associent à 3 étudiants de l’ECV pour vous offrir ce contenu inédit, interactif et pédagogique. 
                 </p>
                 <p class="text"><strong>Mais de quoi parlons nous sur Le Nez Vert ? 

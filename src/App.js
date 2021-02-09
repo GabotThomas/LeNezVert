@@ -54,7 +54,7 @@ export default function App() {
             <Route path={"/Documentation/:id"}>
                 <Documentation/>
             </Route>
-            <Route path={"/A_Propos"}>
+            <Route path={"/Notre_Histoire"}>
                 <Propos/>
             </Route>
             <Route path={"/FAQ"}>

@@ -323,11 +323,11 @@ header{
 }
 .logo-home{
     position: absolute;
-    top: 200px;
+    top: 150px;
     right: 0px;
     z-index: -1;
     overflow: hidden;
-    width: calc(6 * (100% / 14));
+    width: calc(4 * (100% / 14));
 }
 .logo-home img{
     
@@ -412,12 +412,27 @@ header{
     margin-top: 70px;
     padding: 135px 0;
     width: 100%;
-    max-width: 500px;
+    max-width: 570px;
 }
 .banner h1{
     margin: 0;
-    font-size: 85px;
+    font-size: 75px;
     line-height: 90px;
+}
+.banner p{
+    max-width: 450px;
+}
+
+/*Slogan*/
+.slogan h1{
+    font-size: 48px;
+    color: #656565;
+}
+.slogan p{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #afafaf;
 }
 
 /*nos engagement*/
@@ -757,4 +772,18 @@ header{
     .eng-pre .ythgd{
         margin: 0 auto;
     }
+    /*Banner*/
+    .banner h1{
+        font-size: 54px;
+        line-height: initial;
+    }
+
+    /*Slogan*/
+    .slogan h1{
+        font-size: 32px;
+    }
+    .slogan p{
+        font-size: 14px;
+    }
+    
 }

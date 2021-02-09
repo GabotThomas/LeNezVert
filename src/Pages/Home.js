@@ -7,11 +7,19 @@ function Home() {
       <div class="logo-home"><img src="/Img/logo.png" alt=""></img></div>
       <div class="banner d-flex bg-c jst-c mb-8">
            <div class="d-flex-c banner-contain">
-                <span class="c-white text b-600 mb">NOS MARQUES</span>
-                <h1 class="c-white title">Parfum Naturel</h1>
-                <p class="c-white text mb">Un parfum naturel est un parfum composé de matières premières naturelles (huile essentielle, absolu, résinoïde) ou d’origine naturelle (molécules isolées d’un naturel et issu de lui).</p>
-                <div class="button btn-v">Découvrez nos marques</div>
+                <h1 class="c-white title">Parfums </h1>
+                <h1 class="c-white title">Éco-responsables</h1>
+                <p class="c-white text mb-2 mt-2">Retrouvez sur notre site une séléction de marque de parfum proposant des produits de qualités</p>
+                <div class="button btn-v">Découvrez les marques</div>
             </div>    
+       </div>
+       <div class="slogan container d-flex jst-c mb-8">
+          <div class="col-10 d-flex-c col-12-md">
+            <h1 class="title ta">Le Nez Vert, premier site informatif sur les parfums</h1>
+            <h1 class="title ta mb-2">éco-responsables.</h1>
+            <p class="ta">Vous êtes sensibles au recyclage et à l’écologie ?</p>
+            <p class="ta">Et si vous abandonniez pour de bon vos parfums mainstream ?</p>
+          </div>
        </div>
        <div class="presentation d-flex container mb-8">
             <div class="col-7 col-12-sm mb">

@@ -24,7 +24,7 @@ function Product() {
            <div class="col-6 d-flex-c jst-c col-12-sm">
                <h1 class="title">{data.name}</h1>
                <p class="text mb col-8 col-12-md">{data.ldesc}</p>
-               <div class="button btn-v">Le site de la marque</div>
+               <a href={data.link ? data.link : ""}  target="_blank"class="button btn-v">Le site de la marque</a>
            </div>
        </div>
        <div class="container d-flex mb-8">

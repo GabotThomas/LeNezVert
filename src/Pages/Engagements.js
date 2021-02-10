@@ -56,27 +56,27 @@ function Engagements() {
                         <div class="col-3 title c-white jst-c d-flex align-c">1</div>
                         <div class="col-9">
                             <strong class="c-white text b-600">
-                                Respecter les labels bio
+                                Fabrication
                             </strong>
-                            <p class="c-white text">aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.Velit officia consequat duis enim velit mollit.</p>
+                            <p class="c-white text"></p>
                         </div>
                     </div>
                     <div class="col-12 bdr-15 d-flex bg-o p-1 mb">
                         <div class="col-3 title c-white jst-c d-flex align-c">2</div>
                         <div class="col-9">
                             <strong class=" text b-600">
-                                Respecter les labels bio
+                                Environnement
                             </strong>
-                            <p class=" text">aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.Velit officia consequat duis enim velit mollit.</p>
+                            <p class=" text">Nous sélectionnons des marques toujours plus fiables et responsables</p>
                         </div>
                     </div>
                     <div class="col-12 bdr-15 d-flex bg-g p-1 ">
                         <div class="col-3 title  jst-c d-flex align-c">3</div>
                         <div class="col-9">
                             <strong class=" text b-600">
-                                Respecter les labels bio
+                                Transparence
                             </strong>
-                            <p class=" text">aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.Velit officia consequat duis enim velit mollit.</p>
+                            <p class=" text"></p>
                         </div>
                     </div>
                 </div>

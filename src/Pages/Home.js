@@ -40,8 +40,8 @@ function Home() {
        <div class="ne d-flex container jst-c mb-8">
             <div class="block d-flex-c align-c col-10 bdr-20 col-12-sm">
                 <h1 class="title c-vert up mb ta">NOS ENGAGEMENTS</h1>
-                <h2 class="title t2 mb-1 ta">Duis bibendum vitae sed mauris lorem.</h2>
-                <p class="text mb-2"></p>
+                <h2 class="title t2 mb-1 ta">Promesse Durable</h2>
+                <p class="text mb-2 ta">Le Nez Vert s'engage à répertorier les marques correspondant à ses valeurs: Éco-responsabilité, Transparence et Fabrication artisanale</p>
                 <Link to="/nos_engagements">
                   <div class="button btn-v">Nos engagements</div>
                 </Link>

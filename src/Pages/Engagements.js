@@ -58,7 +58,7 @@ function Engagements() {
                             <strong class="c-white text b-600">
                                 Fabrication
                             </strong>
-                            <p class="c-white text"></p>
+                            <p class="c-white text">Nos marques sélectionnées respectent des processus de fabrication étudié et rigoureux pour donner aux produits la meilleur qualité</p>
                         </div>
                     </div>
                     <div class="col-12 bdr-15 d-flex bg-o p-1 mb">
@@ -76,7 +76,7 @@ function Engagements() {
                             <strong class=" text b-600">
                                 Transparence
                             </strong>
-                            <p class=" text"></p>
+                            <p class=" text">Nous estimons qu'il est essentiel de vous fournir la totalité de nos informations concernant les marques que nous avons pris soin de choisir.</p>
                         </div>
                     </div>
                 </div>
